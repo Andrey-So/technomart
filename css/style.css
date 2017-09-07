@@ -9,6 +9,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -447,6 +452,14 @@ input[type="radio"].visually-hidden {
    text-align: center;
 }
 
+.main-button:hover {
+  background-color: #ca2c37;
+}
+
+.main-button:active {
+  background-color: #ba2732;
+}
+
 .main-title {
   margin: 0;
   font-size: 30px;
@@ -513,6 +526,7 @@ input[type="radio"].visually-hidden {
 .cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -868,6 +882,13 @@ input[type="radio"].visually-hidden {
 .footer-developer a {
   display: inline-block;
   color: #ffda96;
+}
+
+.footer-primary-menu a:hover,
+.footer-secondary-menu a:hover,
+.footer-email a:hover,
+.footer-developer a:hover {
+  text-decoration: underline;
 }
 
 .footer-bottom-wrapper {
